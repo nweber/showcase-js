@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Boardgame Showcase</title>
+    <meta name="description" content="" />
+    
+    <style>
+        /* Demo styles */
+        html,body{background:#222;margin:0;}
+        body{border-top:4px solid #000;}
+        .content{color:#777;font:12px/1.4 "helvetica neue",arial,sans-serif;width:620px;margin:20px auto;}
+        p{margin:0 0 20px}
+        a {color:#22BCB9;text-decoration:none;}
+        .cred{margin-top:20px;font-size:11px;}
+
+        /* This rule is read by Galleria to define the gallery height: */
+        #galleria{height:700px}
+    </style>
+    
+    <link rel="stylesheet" href="lib/galleria/themes/classic/galleria.classic.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="lib/galleria/galleria-1.2.9.min.js"></script>
+    
+    <script>
+	var data = [
+	    {
+	        image: 'http://cf.geekdo-images.com/images/pic1464562_lg.jpg',
+	        thumb: 'http://cf.geekdo-images.com/images/pic1001002_mt.jpg',
+	        title: 'Super Dungeon Explore',
+	        description: 'Super Dungeon Explore is a dungeon crawler inspired by old Japanese console RPGs. The miniatures are done in a cute / chibi / super-deformed style, which means the head is roughly the same size as the rest of the body. \n One to five players take the role of classic fantasy heroes like the human paladin, a dwarf fighter, or an elf ranger. One player is the "Dark Consul" who controls the monsters of the dungeon. Every hero/monster has a character card that details the stats for movement, attack, armor, willpower, dexterity, action points and hearts (= life points). Additional information may include special abilities / actions / attacks and potions. \n The game is played on modular dungeon boards. During a round of play, the game passes back and forth between single heroes and the monsters, but the exact order may change from round to round. The characters use the stats from their character card, special dice (with hearts, potions and stars) are only used for combat and checks. If the heroes wound the opponent, they may draw loot cards to improve their stats. There is also the possibility to open treasure chests to find even more powerful things. The monsters have no possibility to "level up" but the Dark Consul has an unlimited number of them. \n To win the game, the Dark Consul must defeat all heroes in his dungeon. The heroes must spawn the dungeon boss by killing monsters or destroying all spawning points (= entry points for new monsters). The heroes must then kill the dungeon boss to be victorious.',
+	        link: 'http://boardgamegeek.com/boardgame/92190/super-dungeon-explore'
+	    },
+	    {
+	        image: 'http://cf.geekdo-images.com/images/pic1315201_lg.jpg',
+	        thumb: 'http://cf.geekdo-images.com/images/pic906495_mt.jpg',
+	        title: 'Lord of the Rings LCG',
+	      	description: 'The Lord of the Rings: The Card Game is a cooperative adventure game in which the players attempt to complete a scenario, each with three heroes of their choice and a deck of allies, events and attachments to support them. Each round, players send their heroes and allies to quest or to fight with enemies that engage them. However, as the heroes and allies exhaust after questing, defending, or attacking, the players\' options are typically insufficient to deal with everything at once. Therefore, players need to determine whether it is more urgent to quest and make progress in the scenario while the enemy forces gain power, or to take down enemies while making no progress, not knowing what will come next. \n The Lord of the Rings: The Card Game is the base game of a Living Card Game for which new adventure packs are released monthly. The base game contains three scenarios, twelve famous characters from the works of J.R.R. Tolkien (including Aragorn, Legolas, Gimli, Denethor and Eowyn), and four pre-constructed player decks. Players can either use one of these decks or construct their own deck to increase their chances to be succesful in the more challenging scenarios. The monthly adventure packs contain a new scenario, a new hero, and new player cards to be used in their deck. The base game is for 1-2 players, but with an additional base game the scenarios can be played with up to four players. \n Although this game is set in Tolkien\'s Middle Earth, the scenarios do not represent scenes from the books, but rather take place in the seventeen years from Bilbo\'s birthday until Frodo\'s departure from the Shire.',
+	        link: 'http://boardgamegeek.com/boardgame/77423/the-lord-of-the-rings-the-card-game'
+	    },
+	    {
+	    	image: '',
+	        thumb: '',
+	        title: '',
+	        description: '',
+	        link: ''
+	    }
+	];
+	
+	Galleria.loadTheme('lib/galleria/themes/classic/galleria.classic.js');
+    Galleria.run('#galleria', {
+	    dataSource: data,
+	    toggleInfo: false
+	});
+	</script>
+</head>
+<body onload="init()">
+    <div id="galleria"></div>
+</body>
+</html>
